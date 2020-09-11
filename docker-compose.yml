@@ -1,0 +1,22 @@
+version: '3'
+services:
+  app:
+    container_name: 'astutecoder-tic-tac-toe-back'
+    restart: on-failure
+    build: .
+    ports:
+      - '4567:4567'
+    links:
+      - ttt-mongo
+  ttt-mongo:
+    container_name: tic-tac-toe-mongo
+    image: mongo
+    ports:
+      - '27018:27018'
+  ttt-test:
+    container_name: tic-tac-toe-mongo-test
+    build: .
+    command: 
+      npm run test
+    links:
+      - ttt-mongo
