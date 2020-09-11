@@ -24,7 +24,7 @@ if you want to run docker containers in demon mode:
 docker-compose up -d --build
 ```
 
-*Incase you don't have docker client*  
+***Incase you don't have docker client***  
 Run the following commands:
 ```javascript
 npm install
