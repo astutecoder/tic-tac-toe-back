@@ -2,6 +2,13 @@ Tic Tac Toe Backend
 ===================
 This project is meant to work along with **[Tic Tac Toe Frontend](https://github.com/astutecoder/tic-tac-toe-front "Frontend Project")** to store gameplay activity log.
 
+## Tech Stack
+- [x] Express.js
+- [x] MongoDB
+- [x] Mongoose
+- [x] Mocha
+- [x] Chai
+
 ## Prerequisites
 
 > if **Docker Client** is not installed in your system, you must need dedicated environment setup.
